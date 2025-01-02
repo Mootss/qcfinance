@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Cakes</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="shortcut icon" href="/img/qcfinance-favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance">
+    </header>
+    <div class="btn-container">
+        <button id="sales-btn" type="button" onclick="location.href='/sales'">
+            Sales
+        </button>
+        <button id="expenses-btn" type="button" onclick="location.href='/expenses'">
+            Expenses
+        </button>
+    </div>
+    
+    <div class="dashboard">
+        <h2>January</h2>
+        <div>
+            <p>Income</p>
+            <p> <%= totalSales.toLocaleString() %> </p>
+        </div>
+        <div>
+            <p>Expenses</p>
+            <p> <%= totalExpenses.toLocaleString() %> </p>
+        </div>
+        <div>
+            <p>Net Profit</p>
+            <p> <%= (totalSales - totalExpenses).toLocaleString() %> </p>
+        </div>
+    </div>
+   
+</body>
+</html>

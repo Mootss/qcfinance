@@ -1,0 +1,3197 @@
+[
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "Cake Board Round 10\"",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "Cake Box 10x10x10 window",
+        "Quantity": 2,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "Cake box 9x9x5 ",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "Cake Box 10x10x5 ",
+        "Quantity": 10,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "Daisy Margarine 500g",
+        "Quantity": 3,
+        "Rate": 45.0,
+        "Unit": "cup",
+        "GST": 10.8,
+        "Total": 145.8
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "Oldenburger butter 250g unsalt",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "Pcs",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "flour",
+        "Quantity": 10,
+        "Rate": 5.0,
+        "Unit": "kg",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "Cupcake box 6 Slot",
+        "Quantity": 1,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 0.96,
+        "Total": 12.96
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "Cake box 9x9x5 ",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "Cake box 10x10x5 ",
+        "Quantity": 2,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 1.92,
+        "Total": 25.92
+    },
+    {
+        "Date": "2024-09-05T00:00:00",
+        "Description": "Daisy Margarine 2.5kg",
+        "Quantity": 6,
+        "Rate": 180.0,
+        "Unit": "Can",
+        "GST": 86.4,
+        "Total": 1166.4
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "pyramid Creaming Fat 400g",
+        "Quantity": 1,
+        "Rate": 48.0,
+        "Unit": "Can",
+        "GST": 3.84,
+        "Total": 51.84
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "Redman Icing Suger 1kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "Pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "ChANTYPAK Wipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "Fondel Fondant Black",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "pkt",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "fondel Fondant Whit",
+        "Quantity": 2,
+        "Rate": 120.0,
+        "Unit": "pkt",
+        "GST": 19.2,
+        "Total": 259.2
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "Edible Color Beads",
+        "Quantity": 1,
+        "Rate": 38.0,
+        "Unit": "Can",
+        "GST": 3.04,
+        "Total": 41.04
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "Cake Box 14x10x5",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-09-10T00:00:00",
+        "Description": "Cake Board Rectangula 10x14",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-09-11T00:00:00",
+        "Description": "Redman Icing Suger 1kg",
+        "Quantity": 3,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 12.0,
+        "Total": 162.0
+    },
+    {
+        "Date": "2024-09-11T00:00:00",
+        "Description": "Pyramid Creaming Fat 400g",
+        "Quantity": 2,
+        "Rate": 48.0,
+        "Unit": "Can",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-09-11T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-09-13T00:00:00",
+        "Description": "Battlship Vanlla Essence 28ml",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "btl",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-09-13T00:00:00",
+        "Description": "Cake Box 12x12x12 Window",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "Pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-09-13T00:00:00",
+        "Description": "Cake box 9x9x5 ",
+        "Quantity": 5,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-13T00:00:00",
+        "Description": "cake Box 10x10x5 Window",
+        "Quantity": 3,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 6.0,
+        "Total": 81.0
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Redman Icing Suger 1kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "flour kg",
+        "Quantity": 25,
+        "Rate": 5.0,
+        "Unit": "kg",
+        "GST": 10.0,
+        "Total": 135.0
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "egg",
+        "Quantity": 2,
+        "Rate": 350.0,
+        "Unit": "Case",
+        "GST": 56.0,
+        "Total": 756.0
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Dummy 5x8",
+        "Quantity": 1,
+        "Rate": 75.0,
+        "Unit": "Pcs",
+        "GST": 6.0,
+        "Total": 81.0
+    },
+    {
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Dummy 5x10",
+        "Quantity": 1,
+        "Rate": 100.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Cake Board 12\"",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "Pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Cake Box 10x106",
+        "Quantity": 2,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 1.92,
+        "Total": 25.92
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Cake Box 12x12x5",
+        "Quantity": 1,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 0.96,
+        "Total": 12.96
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Cake box 9x9x5 ",
+        "Quantity": 1,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 0.72,
+        "Total": 9.72
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Carry Bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Cupcake box 12 Slot",
+        "Quantity": 1,
+        "Rate": 22.0,
+        "Unit": "Pcs",
+        "GST": 1.76,
+        "Total": 23.76
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Open Star tip 6B (medium)",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Solo muffin cup white big (2.5x2x1.5\"",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pkt",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-09-19T00:00:00",
+        "Description": "Ritzbury cooking choc dark 400g",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "Pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-09-22T00:00:00",
+        "Description": "Cake Box 10x10x6\" White",
+        "Quantity": 5,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-09-22T00:00:00",
+        "Description": "Cake Box 9x9x5 ",
+        "Quantity": 10,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-09-22T00:00:00",
+        "Description": "Carry Bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-09-26T00:00:00",
+        "Description": "Barbie Doll cake Topper",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "fondel Fondant Whit",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "kg",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "Cake Board Round 10\"",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "Cake Box 10x10x6\" White",
+        "Quantity": 2,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 1.92,
+        "Total": 25.92
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "Cupcake box 6 Slot",
+        "Quantity": 1,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 0.96,
+        "Total": 12.96
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "Carry Bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-09-27T00:00:00",
+        "Description": "pillsburry choco cake mix",
+        "Quantity": 10,
+        "Rate": 45.0,
+        "Unit": "pkt",
+        "GST": 36.0,
+        "Total": 486.0
+    },
+    {
+        "Date": "2024-10-01T00:00:00",
+        "Description": "Cupcake Box 6 slot",
+        "Quantity": 1,
+        "Rate": 12.0,
+        "Unit": "pcs",
+        "GST": 0.96,
+        "Total": 12.96
+    },
+    {
+        "Date": "2024-10-01T00:00:00",
+        "Description": "Oldenburger butter 250g unsalt",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "Pcs",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-10-01T00:00:00",
+        "Description": "pyramid Creaming Fat 400g",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "Can",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-09-01T00:00:00",
+        "Description": "egg",
+        "Quantity": 20,
+        "Rate": 2.5,
+        "Unit": "pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "egg",
+        "Quantity": 60,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "Butter",
+        "Quantity": 2,
+        "Rate": 62.0,
+        "Unit": "Pcs",
+        "GST": 9.92,
+        "Total": 133.92
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "dummy 5x5",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "Icing ",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "fondant 1kg",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "kg",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "Cake Box 19x10x5",
+        "Quantity": 3,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 2.88,
+        "Total": 38.88
+    },
+    {
+        "Date": "2024-10-02T00:00:00",
+        "Description": "foam board",
+        "Quantity": 1,
+        "Rate": 48.0,
+        "Unit": "Pcs",
+        "GST": 3.84,
+        "Total": 51.84
+    },
+    {
+        "Date": "2024-10-03T00:00:00",
+        "Description": "Car toy",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "A4 Size Cake Box",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "A4 Size Cake board",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "Cake Box 10x10x5",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "Cake Board 9x9x5",
+        "Quantity": 4,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "Food Color Orenge28ml",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "btl",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "Icing Suger",
+        "Quantity": 1,
+        "Rate": 52.0,
+        "Unit": "Kg",
+        "GST": 4.16,
+        "Total": 56.16
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "Cake Toper",
+        "Quantity": 1,
+        "Rate": 48.0,
+        "Unit": "Pcs",
+        "GST": 3.84,
+        "Total": 51.84
+    },
+    {
+        "Date": "2024-10-05T00:00:00",
+        "Description": "White Margerin",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "Can",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-10-06T00:00:00",
+        "Description": "Fresh Flower",
+        "Quantity": 2,
+        "Rate": 40.0,
+        "Unit": "Pcs",
+        "GST": 6.4,
+        "Total": 86.4
+    },
+    {
+        "Date": "2024-10-06T00:00:00",
+        "Description": "CHANTYPAK Wipping Cream 1L",
+        "Quantity": 2,
+        "Rate": 100.0,
+        "Unit": "pkt",
+        "GST": 16.0,
+        "Total": 216.0
+    },
+    {
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Cake Box 10x10x5",
+        "Quantity": 5,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Cake mix( Choclate)",
+        "Quantity": 2,
+        "Rate": 47.0,
+        "Unit": "pkt",
+        "GST": 7.5200000000000005,
+        "Total": 101.52
+    },
+    {
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Banto Box",
+        "Quantity": 10,
+        "Rate": 4.5,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Foam bolls",
+        "Quantity": 3,
+        "Rate": 15.0,
+        "Unit": "pkt",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "butter 250g",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "pcs",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "margerine 2.5kg",
+        "Quantity": 1,
+        "Rate": 180.0,
+        "Unit": "can",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "cooking oil",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "bot",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "eggs",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "12x12 cake box",
+        "Quantity": 2,
+        "Rate": 20.0,
+        "Unit": "pcs",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "cake board 12inch",
+        "Quantity": 2,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "cake board 9 inch",
+        "Quantity": 5,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "cake board 10 inch",
+        "Quantity": 5,
+        "Rate": 12.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "whipping cream",
+        "Quantity": 3,
+        "Rate": 100.0,
+        "Unit": "pkt",
+        "GST": 24.0,
+        "Total": 324.0
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "black fondant ",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "white fondant 1kg",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-10-09T00:00:00",
+        "Description": "milk packet 900g",
+        "Quantity": 1,
+        "Rate": 136.0,
+        "Unit": "pkt",
+        "GST": 10.88,
+        "Total": 146.88
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "CHANTYPAK Whipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "Cake box Window 12x12x12",
+        "Quantity": 2,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "Cake Board 12x12x12",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "Pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "Fondant 250g",
+        "Quantity": 2,
+        "Rate": 35.0,
+        "Unit": "pcs",
+        "GST": 5.6000000000000005,
+        "Total": 75.6
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "Cupcake Box 20 slot",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-10-12T00:00:00",
+        "Description": "Cupcake Liner",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "Pkt",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Margerine cup 480g",
+        "Quantity": 2,
+        "Rate": 48.0,
+        "Unit": "cup",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "White Margerin 500g",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "Cup",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "butter 250g",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "Pcs",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Cake Box !0x10x5",
+        "Quantity": 3,
+        "Rate": 12.0,
+        "Unit": "Pes",
+        "GST": 2.88,
+        "Total": 38.88
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 3,
+        "Rate": 9.0,
+        "Unit": "Pes",
+        "GST": 2.16,
+        "Total": 29.16
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Icing Suger 1Kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "Kg",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Fondunt 2Kg",
+        "Quantity": 2,
+        "Rate": 120.0,
+        "Unit": "Kg",
+        "GST": 19.2,
+        "Total": 259.2
+    },
+    {
+        "Date": "2024-10-18T00:00:00",
+        "Description": "CHANTYPAK Whipping Cream 1L",
+        "Quantity": 1,
+        "Rate": 100.0,
+        "Unit": "Lt",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-10-18T00:00:00",
+        "Description": "Egg",
+        "Quantity": 10,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-10-18T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "Pkt",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-19T00:00:00",
+        "Description": "Icing Shuger 1kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "kg",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-19T00:00:00",
+        "Description": "Fondunt 1Kg",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "kg",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-10-19T00:00:00",
+        "Description": "Flower cutter ",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-10-20T00:00:00",
+        "Description": "Egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-20T00:00:00",
+        "Description": "Margerine Can 2.5kg",
+        "Quantity": 1,
+        "Rate": 180.0,
+        "Unit": "kg",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-10-20T00:00:00",
+        "Description": "Fondunt 1Kg",
+        "Quantity": 1,
+        "Rate": 130.0,
+        "Unit": "kg",
+        "GST": 10.4,
+        "Total": 140.4
+    },
+    {
+        "Date": "2024-10-21T00:00:00",
+        "Description": "Fondunt 500g",
+        "Quantity": 1,
+        "Rate": 40.0,
+        "Unit": "g",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-10-21T00:00:00",
+        "Description": "sugger 2Kg",
+        "Quantity": 2,
+        "Rate": 4.0,
+        "Unit": "Kg",
+        "GST": 0.64,
+        "Total": 8.64
+    },
+    {
+        "Date": "2024-10-21T00:00:00",
+        "Description": "Flour 2kg",
+        "Quantity": 2,
+        "Rate": 4.0,
+        "Unit": "kg",
+        "GST": 0.64,
+        "Total": 8.64
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "fontdant",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "kg",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "White margerine",
+        "Quantity": 2,
+        "Rate": 55.0,
+        "Unit": "cup",
+        "GST": 8.8,
+        "Total": 118.8
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "Beads",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "cup",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "cake board",
+        "Quantity": 3,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 2.16,
+        "Total": 29.16
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "cake board",
+        "Quantity": 3,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "window cake box 12x12 inch",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "cake box 9x9 inch",
+        "Quantity": 3,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 2.16,
+        "Total": 29.16
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "cake box 10x6 inch",
+        "Quantity": 3,
+        "Rate": 12.0,
+        "Unit": "pcs",
+        "GST": 2.88,
+        "Total": 38.88
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "icing sugar",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "dummy 3x6 in ",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "CHANTYPAK Whipping Cream 1L",
+        "Quantity": 2,
+        "Rate": 93.0,
+        "Unit": "pkt",
+        "GST": 14.88,
+        "Total": 200.88
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "cake board 12inch",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "ribbon",
+        "Quantity": 3,
+        "Rate": 37.0,
+        "Unit": "pcs",
+        "GST": 8.88,
+        "Total": 119.88
+    },
+    {
+        "Date": "2024-10-24T00:00:00",
+        "Description": "butter",
+        "Quantity": 1,
+        "Rate": 66.0,
+        "Unit": "pcs",
+        "GST": 5.28,
+        "Total": 71.28
+    },
+    {
+        "Date": "2024-10-25T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "pkt",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "edible print",
+        "Quantity": 1,
+        "Rate": 200.0,
+        "Unit": "pcs",
+        "GST": 16.0,
+        "Total": 216.0
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "CHANTYPAK Whipping Cream 1L",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "Oldenburger butter 250g unsalt",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "pkt",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "cake board rectangle 15x18",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "cake box 19x15x5 A3 size",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 2,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "white margerine 350g",
+        "Quantity": 2,
+        "Rate": 48.0,
+        "Unit": "pkt",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pkt",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "margerine 485g",
+        "Quantity": 2,
+        "Rate": 38.0,
+        "Unit": "pkt",
+        "GST": 6.08,
+        "Total": 82.08
+    },
+    {
+        "Date": "2024-10-27T00:00:00",
+        "Description": "egg",
+        "Quantity": 48,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Egg",
+        "Quantity": 70,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 11.200000000000001,
+        "Total": 151.2
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": " Margerine  2.5kg",
+        "Quantity": 1,
+        "Rate": 180.0,
+        "Unit": "Can",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Chanthypak Whipping Cream 1L",
+        "Quantity": 3,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 23.28,
+        "Total": 314.28
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Cake Box 12x12x12",
+        "Quantity": 2,
+        "Rate": 30.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 5,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Cake Box 10x10x5",
+        "Quantity": 5,
+        "Rate": 12.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Cake Box A3",
+        "Quantity": 2,
+        "Rate": 40.0,
+        "Unit": "Pcs",
+        "GST": 6.4,
+        "Total": 86.4
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": " Dark Chocolate 400G",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "Pcs",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "topper Print",
+        "Quantity": 3,
+        "Rate": 50.0,
+        "Unit": "Pcs",
+        "GST": 12.0,
+        "Total": 162.0
+    },
+    {
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Edible print A4",
+        "Quantity": 1,
+        "Rate": 100.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "egg",
+        "Quantity": 60,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "margerine 1kg",
+        "Quantity": 1,
+        "Rate": 180.0,
+        "Unit": "cup",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 3,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 23.28,
+        "Total": 314.28
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "cake box 12x12",
+        "Quantity": 2,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "cake box 9x9",
+        "Quantity": 5,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "cake box 10x10",
+        "Quantity": 5,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "cooking chocolate",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "cake mix",
+        "Quantity": 2,
+        "Rate": 48.0,
+        "Unit": "pkt",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "condensed milk",
+        "Quantity": 1,
+        "Rate": 17.0,
+        "Unit": "can",
+        "GST": 1.36,
+        "Total": 18.36
+    },
+    {
+        "Date": "2024-11-01T00:00:00",
+        "Description": "rasaco vanilla flavour",
+        "Quantity": 1,
+        "Rate": 80.0,
+        "Unit": "btl",
+        "GST": 6.4,
+        "Total": 86.4
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "butter flavour essence",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "btl",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "whip cream",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "cupcake box",
+        "Quantity": 2,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "butter",
+        "Quantity": 2,
+        "Rate": 60.0,
+        "Unit": "pkt",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "bamboo stick",
+        "Quantity": 1,
+        "Rate": 24.0,
+        "Unit": "pcs",
+        "GST": 1.92,
+        "Total": 25.92
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "cakeboard ",
+        "Quantity": 5,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "icing sugar redman 1kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-02T00:00:00",
+        "Description": "foam ball barbie pink",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "Oh Baby Topper",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "icing  Suger Redman 1Kg",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "cupcake box",
+        "Quantity": 2,
+        "Rate": 18.0,
+        "Unit": "pcs",
+        "GST": 2.88,
+        "Total": 38.88
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "Cake Box 9x9x6 ",
+        "Quantity": 10,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-11-03T00:00:00",
+        "Description": "Oldenburger butter 250g unsalt",
+        "Quantity": 1,
+        "Rate": 65.0,
+        "Unit": "pkt",
+        "GST": 5.2,
+        "Total": 70.2
+    },
+    {
+        "Date": "2024-11-04T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 5,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-04T00:00:00",
+        "Description": "Cake Box 10x10x6",
+        "Quantity": 5,
+        "Rate": 12.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-11-04T00:00:00",
+        "Description": "Cupcake box 6 Slot",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakeboard 9inch",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakeboard 8 inch",
+        "Quantity": 2,
+        "Rate": 8.0,
+        "Unit": "pcs",
+        "GST": 1.28,
+        "Total": 17.28
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakeboard 5inch",
+        "Quantity": 1,
+        "Rate": 5.0,
+        "Unit": "pcs",
+        "GST": 0.4,
+        "Total": 5.4
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakeboard 6x6 window",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakebox 8x8 ",
+        "Quantity": 1,
+        "Rate": 8.0,
+        "Unit": "pcs",
+        "GST": 0.64,
+        "Total": 8.64
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cupcake box 16slot",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakeboard m10 inch",
+        "Quantity": 1,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 0.8,
+        "Total": 10.8
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "cakedrum board ",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "muffin cup",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pkt",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "white margerine",
+        "Quantity": 3,
+        "Rate": 48.0,
+        "Unit": "cup",
+        "GST": 11.52,
+        "Total": 155.52
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 2,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 8.8,
+        "Total": 118.8
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "white fondant 1kg",
+        "Quantity": 2,
+        "Rate": 120.0,
+        "Unit": "pkt",
+        "GST": 19.2,
+        "Total": 259.2
+    },
+    {
+        "Date": "2024-11-06T00:00:00",
+        "Description": "whipping cream 1liter",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "white margerine",
+        "Quantity": 1,
+        "Rate": 48.0,
+        "Unit": "pkt",
+        "GST": 3.84,
+        "Total": 51.84
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "gel base white 28ml ",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "can",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "whipping cream 1liter",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "white fondant 1kg",
+        "Quantity": 1,
+        "Rate": 120.0,
+        "Unit": "pkt",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "dummy",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "pcs",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "wire bundle green colour flower wire",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "white margerine",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "cup",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "cake board 9 inch",
+        "Quantity": 1,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 0.8,
+        "Total": 10.8
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "cake board 10 inch",
+        "Quantity": 1,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 0.72,
+        "Total": 9.72
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "dry leaf",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "cake dummy",
+        "Quantity": 1,
+        "Rate": 70.0,
+        "Unit": "pcs",
+        "GST": 5.6000000000000005,
+        "Total": 75.6
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "cake box 10x10",
+        "Quantity": 1,
+        "Rate": 14.0,
+        "Unit": "Pcs",
+        "GST": 1.12,
+        "Total": 15.120000000000001
+    },
+    {
+        "Date": "2024-11-07T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-11-08T00:00:00",
+        "Description": "Margerine 485g",
+        "Quantity": 2,
+        "Rate": 38.0,
+        "Unit": "Cup",
+        "GST": 6.08,
+        "Total": 82.08
+    },
+    {
+        "Date": "2024-11-08T00:00:00",
+        "Description": "egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-11-08T00:00:00",
+        "Description": "Butter 250g",
+        "Quantity": 1,
+        "Rate": 62.0,
+        "Unit": "Pcs",
+        "GST": 4.96,
+        "Total": 66.96
+    },
+    {
+        "Date": "2024-11-08T00:00:00",
+        "Description": "waffer Paper",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-11-10T00:00:00",
+        "Description": "Choclate Cake Mix",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "Pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-13T00:00:00",
+        "Description": "Cake topper",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-13T00:00:00",
+        "Description": "Candle Light set",
+        "Quantity": 1,
+        "Rate": 40.0,
+        "Unit": "pkt",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 2,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 8.8,
+        "Total": 118.8
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "cake board Round 9 inch",
+        "Quantity": 5,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "cake box 12x12 window",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "Pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Cake Board 12\"",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "Pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Pearly pink Sprikles 50g",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "can",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Butter 250g",
+        "Quantity": 2,
+        "Rate": 62.0,
+        "Unit": "Pcs",
+        "GST": 9.92,
+        "Total": 133.92
+    },
+    {
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Macaroons",
+        "Quantity": 5,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-15T00:00:00",
+        "Description": "egg",
+        "Quantity": 60,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-11-15T00:00:00",
+        "Description": "Fondund 250g",
+        "Quantity": 6,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 16.8,
+        "Total": 226.8
+    },
+    {
+        "Date": "2024-11-15T00:00:00",
+        "Description": "Everporated milk",
+        "Quantity": 1,
+        "Rate": 32.0,
+        "Unit": "Can",
+        "GST": 2.56,
+        "Total": 34.56
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "Cake Box 19x15x5",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "Cake Board 15x18",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 1,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 4.4,
+        "Total": 59.4
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "cake board 9 inch Round",
+        "Quantity": 8,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 6.4,
+        "Total": 86.4
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 3,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 23.28,
+        "Total": 314.28
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 9,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 6.48,
+        "Total": 87.48
+    },
+    {
+        "Date": "2024-11-17T00:00:00",
+        "Description": "Cake Box 12x12x12",
+        "Quantity": 2,
+        "Rate": 30.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "redman icing sugar 1kg",
+        "Quantity": 4,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 17.6,
+        "Total": 237.6
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Pyramad Creaming Fat 350g",
+        "Quantity": 3,
+        "Rate": 50.0,
+        "Unit": "cup",
+        "GST": 12.0,
+        "Total": 162.0
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Board SQUARE 9\"",
+        "Quantity": 1,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 0.8,
+        "Total": 10.8
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 4,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 31.04,
+        "Total": 419.04
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Board Rectangule 15x18",
+        "Quantity": 2,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 5.6000000000000005,
+        "Total": 75.6
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Board 19x15x15",
+        "Quantity": 2,
+        "Rate": 45.0,
+        "Unit": "Pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Drum 12\" thick 12mm",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 2,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.32,
+        "Total": 4.32
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Fondund  print A3",
+        "Quantity": 2,
+        "Rate": 200.0,
+        "Unit": "Pce",
+        "GST": 32.0,
+        "Total": 432.0
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake topper",
+        "Quantity": 2,
+        "Rate": 40.0,
+        "Unit": "Pcs",
+        "GST": 6.4,
+        "Total": 86.4
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Veffer Paper Print",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "margerine 1kg",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "Can",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "egg",
+        "Quantity": 90,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Board A4",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-11-18T00:00:00",
+        "Description": "Cake Box A4 Size",
+        "Quantity": 1,
+        "Rate": 24.0,
+        "Unit": "Pcs",
+        "GST": 1.92,
+        "Total": 25.92
+    },
+    {
+        "Date": "2024-11-23T00:00:00",
+        "Description": "Cake Board 9\"",
+        "Quantity": 10,
+        "Rate": 9.0,
+        "Unit": "Pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-11-23T00:00:00",
+        "Description": "Cake Box 9x9x5",
+        "Quantity": 10,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-11-23T00:00:00",
+        "Description": "Rasaco Butter flavour 30ML",
+        "Quantity": 1,
+        "Rate": 19.0,
+        "Unit": "Btl",
+        "GST": 1.52,
+        "Total": 20.52
+    },
+    {
+        "Date": "2024-11-23T00:00:00",
+        "Description": "Dummy 1H x100",
+        "Quantity": 1,
+        "Rate": 17.0,
+        "Unit": "Pcs",
+        "GST": 1.36,
+        "Total": 18.36
+    },
+    {
+        "Date": "2024-11-23T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 3,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 23.28,
+        "Total": 314.28
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "Cake Board Rectangule 15x18",
+        "Quantity": 2,
+        "Rate": 33.0,
+        "Unit": "Pcs",
+        "GST": 5.28,
+        "Total": 71.28
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "Cake Box A3 Size",
+        "Quantity": 1,
+        "Rate": 42.0,
+        "Unit": "Pcs",
+        "GST": 3.36,
+        "Total": 45.36
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "Cake Board round 12 inch",
+        "Quantity": 2,
+        "Rate": 14.0,
+        "Unit": "Pcs",
+        "GST": 2.24,
+        "Total": 30.240000000000002
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 3,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 23.28,
+        "Total": 314.28
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 2,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.32,
+        "Total": 4.32
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "egg",
+        "Quantity": 120,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 19.2,
+        "Total": 259.2
+    },
+    {
+        "Date": "2024-11-26T00:00:00",
+        "Description": "Margerine 1 Kg",
+        "Quantity": 1,
+        "Rate": 180.0,
+        "Unit": "Can",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-11-30T00:00:00",
+        "Description": "chanty pak whipping cream",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-11-30T00:00:00",
+        "Description": "Cake Box A4 Size",
+        "Quantity": 2,
+        "Rate": 20.0,
+        "Unit": "pcs",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-12-03T00:00:00",
+        "Description": "Egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-03T00:00:00",
+        "Description": "Margerine",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "Can",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-12-03T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 2,
+        "Rate": 45.0,
+        "Unit": "Pkt",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-12-04T00:00:00",
+        "Description": "Cake Board 10\"",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-04T00:00:00",
+        "Description": "Cake Box 9x9x6",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-04T00:00:00",
+        "Description": "Chantipak wipped Cream 1L",
+        "Quantity": 4,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 31.04,
+        "Total": 419.04
+    },
+    {
+        "Date": "2024-12-04T00:00:00",
+        "Description": "Wefer Paper",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-04T00:00:00",
+        "Description": "Flower Bunch",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "Pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-05T00:00:00",
+        "Description": "Flour ",
+        "Quantity": 10,
+        "Rate": 5.0,
+        "Unit": "Kg",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-05T00:00:00",
+        "Description": "Suger",
+        "Quantity": 10,
+        "Rate": 5.0,
+        "Unit": "Kg",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-05T00:00:00",
+        "Description": "Cake Box 14x14x5",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-05T00:00:00",
+        "Description": "Cake Board 12\"  Round",
+        "Quantity": 3,
+        "Rate": 20.0,
+        "Unit": "Pce",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-05T00:00:00",
+        "Description": "Cake Board 10\" Round",
+        "Quantity": 2,
+        "Rate": 17.0,
+        "Unit": "Pcs",
+        "GST": 2.72,
+        "Total": 36.72
+    },
+    {
+        "Date": "2024-12-06T00:00:00",
+        "Description": "egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-06T00:00:00",
+        "Description": "5kg sugar",
+        "Quantity": 5,
+        "Rate": 5.0,
+        "Unit": "pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-06T00:00:00",
+        "Description": "5kg flour",
+        "Quantity": 5,
+        "Rate": 5.0,
+        "Unit": "pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "chantypak whipping cream ",
+        "Quantity": 5,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 38.800000000000004,
+        "Total": 523.8
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pkt",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "white margerine 350g",
+        "Quantity": 2,
+        "Rate": 48.0,
+        "Unit": "pkt",
+        "GST": 7.68,
+        "Total": 103.68
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "redman icing sugar",
+        "Quantity": 2,
+        "Rate": 55.0,
+        "Unit": "pkt",
+        "GST": 8.8,
+        "Total": 118.8
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "cake mix",
+        "Quantity": 2,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "cake board round 9 in",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "bento box 6in",
+        "Quantity": 2,
+        "Rate": 5.0,
+        "Unit": "pcs",
+        "GST": 0.8,
+        "Total": 10.8
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "cake box 9x9x5",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "cake box 12x12x12 window",
+        "Quantity": 5,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 12.0,
+        "Total": 162.0
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "metallic cupcake liner",
+        "Quantity": 1,
+        "Rate": 40.0,
+        "Unit": "pkt",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": " butter 250g",
+        "Quantity": 2,
+        "Rate": 60.0,
+        "Unit": "pkt",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "cakebox 10x10",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-12T00:00:00",
+        "Description": "topper and prints",
+        "Quantity": 1,
+        "Rate": 235.0,
+        "Unit": "pcs",
+        "GST": 18.8,
+        "Total": 253.8
+    },
+    {
+        "Date": "2024-12-14T00:00:00",
+        "Description": "egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-14T00:00:00",
+        "Description": "1kg margerine",
+        "Quantity": 2,
+        "Rate": 170.0,
+        "Unit": "pkt",
+        "GST": 34.0,
+        "Total": 459.0
+    },
+    {
+        "Date": "2024-12-15T00:00:00",
+        "Description": "egg",
+        "Quantity": 90,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 14.4,
+        "Total": 194.4
+    },
+    {
+        "Date": "2024-12-15T00:00:00",
+        "Description": "Flour ",
+        "Quantity": 5,
+        "Rate": 4.0,
+        "Unit": "pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "whipping cream",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "cake box 9x9",
+        "Quantity": 10,
+        "Rate": 9.0,
+        "Unit": "pcs",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "cake box 8x8",
+        "Quantity": 5,
+        "Rate": 8.0,
+        "Unit": "pcs",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "cake board round 9 in",
+        "Quantity": 10,
+        "Rate": 10.0,
+        "Unit": "pcs",
+        "GST": 8.0,
+        "Total": 108.0
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "6 inch bento box",
+        "Quantity": 10,
+        "Rate": 5.0,
+        "Unit": "pcs",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "butter",
+        "Quantity": 2,
+        "Rate": 62.0,
+        "Unit": "pcs",
+        "GST": 9.92,
+        "Total": 133.92
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "A4 size box",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "A4 size board",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-16T00:00:00",
+        "Description": "margerine 2.5 kg",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "pcs",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "whipping cream",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cakeboard square",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake box window 12x12",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake box 12x16",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "pcs",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake board  15x11",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "pcs",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "unsalted butter",
+        "Quantity": 2,
+        "Rate": 62.0,
+        "Unit": "pcs",
+        "GST": 9.92,
+        "Total": 133.92
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake box 12x4",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake board",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-20T00:00:00",
+        "Description": "cake box 12 inch",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-21T00:00:00",
+        "Description": "margerine 2.5 kg",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "Can",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-12-21T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 2,
+        "Rate": 45.0,
+        "Unit": "Pkt",
+        "GST": 7.2,
+        "Total": 97.2
+    },
+    {
+        "Date": "2024-12-21T00:00:00",
+        "Description": "egg",
+        "Quantity": 30,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-21T00:00:00",
+        "Description": "Margerine 450g",
+        "Quantity": 2,
+        "Rate": 38.0,
+        "Unit": "Can",
+        "GST": 6.08,
+        "Total": 82.08
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Chocolate Cake mix",
+        "Quantity": 5,
+        "Rate": 45.0,
+        "Unit": "pkt",
+        "GST": 18.0,
+        "Total": 243.0
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Flour ",
+        "Quantity": 5,
+        "Rate": 5.0,
+        "Unit": "Kg",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Suger",
+        "Quantity": 5,
+        "Rate": 5.0,
+        "Unit": "kg",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "egg",
+        "Quantity": 60,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 9.6,
+        "Total": 129.6
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Margarine 2.5 kg",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "Can",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Fondant Cup",
+        "Quantity": 1,
+        "Rate": 130.0,
+        "Unit": "Cup",
+        "GST": 10.4,
+        "Total": 140.4
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Cake Board 8 Inches ",
+        "Quantity": 4,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 3.2,
+        "Total": 43.2
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Redman icing sugar 1kg",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "pkt",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "Peramed Creaming Fat 350G",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-22T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "Rasarco Pillarbox Color28ml",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "Btl",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "chantypak whipping cream ",
+        "Quantity": 1,
+        "Rate": 97.0,
+        "Unit": "pkt",
+        "GST": 7.76,
+        "Total": 104.76
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "Peramed Creaming Fat 350G",
+        "Quantity": 1,
+        "Rate": 50.0,
+        "Unit": "pkt",
+        "GST": 4.0,
+        "Total": 54.0
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "Redman Icing Suger 1kg",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "Kg",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "Ritzbury Cooking Choc Dark 400g",
+        "Quantity": 1,
+        "Rate": 60.0,
+        "Unit": "Pcs",
+        "GST": 4.8,
+        "Total": 64.8
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "Cake Board 10\"",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-24T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Dummy 1Hx7D",
+        "Quantity": 1,
+        "Rate": 15.0,
+        "Unit": "Pcs",
+        "GST": 1.2,
+        "Total": 16.2
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Dummy 6Hx9D",
+        "Quantity": 1,
+        "Rate": 105.0,
+        "Unit": "Pcs",
+        "GST": 8.4,
+        "Total": 113.4
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Cake Board 15xx18 A3",
+        "Quantity": 1,
+        "Rate": 35.0,
+        "Unit": "Pcs",
+        "GST": 2.8000000000000003,
+        "Total": 37.8
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Cake Box 19x15x5",
+        "Quantity": 1,
+        "Rate": 45.0,
+        "Unit": "Pcs",
+        "GST": 3.6,
+        "Total": 48.6
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "chantypak whipping cream 1L",
+        "Quantity": 2,
+        "Rate": 97.0,
+        "Unit": "Pkt",
+        "GST": 15.52,
+        "Total": 209.52
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "carry bag",
+        "Quantity": 1,
+        "Rate": 2.0,
+        "Unit": "Pcs",
+        "GST": 0.16,
+        "Total": 2.16
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Rasarco Food Flavour Vanilla 30ml",
+        "Quantity": 1,
+        "Rate": 20.0,
+        "Unit": "Btl",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Rasarco Food Flavour Butter 30ml",
+        "Quantity": 1,
+        "Rate": 30.0,
+        "Unit": "Btl",
+        "GST": 2.4,
+        "Total": 32.4
+    },
+    {
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Cake Board Round Gold 9\"",
+        "Quantity": 2,
+        "Rate": 10.0,
+        "Unit": "Pcs",
+        "GST": 1.6,
+        "Total": 21.6
+    },
+    {
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Baking powder 100g",
+        "Quantity": 1,
+        "Rate": 16.0,
+        "Unit": "Can",
+        "GST": 1.28,
+        "Total": 17.28
+    },
+    {
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Evaporated milk",
+        "Quantity": 1,
+        "Rate": 25.0,
+        "Unit": "Can",
+        "GST": 2.0,
+        "Total": 27.0
+    },
+    {
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Mari Gold Double Peach 390g",
+        "Quantity": 1,
+        "Rate": 17.0,
+        "Unit": "Can",
+        "GST": 1.36,
+        "Total": 18.36
+    },
+    {
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Margarine 2.5 kg",
+        "Quantity": 1,
+        "Rate": 170.0,
+        "Unit": "Can",
+        "GST": 13.6,
+        "Total": 183.6
+    },
+    {
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Margarine cup 460g",
+        "Quantity": 1,
+        "Rate": 53.0,
+        "Unit": "Cup",
+        "GST": 4.24,
+        "Total": 57.24
+    }
+]

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="shortcut icon" href="/img/qcfinance-favicon.png" type="image/png">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/sales.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance"></a>
+    </header>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <form id="date-form" action="/sales" method="GET">
+                <select name="date" id="select-date" class="select-box">
+                    <% for( let i = 0; i < dateList.length; i++ ) { %>
+                        <option value="<%= dateList[i].year + "-" + dateList[i].monthNum %>"
+                            <% if (dateList[i].monthName == monthName) { %>
+                                selected
+                            <% } %>>
+                            <%= dateList[i].year + " " + dateList[i].monthName %>
+                        </option>
+                    <% } %>
+                </select>
+            </form>
+            <span class="select-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>
+        </div>
+    </div>
+    
+    <div class="table-container">
+        <table class="records-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th class="hide-mobile">QTY</th>
+                    <th class="hide-mobile">Rate</th>
+                    <th class="hide-mobile">Discount</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% salesList.forEach((saleItem, index) => { %>
+                    <tr data-id="<%= saleItem._id.toString() %>">
+                        <td><%= index + 1 %>.</td>
+                        <td><%= saleItem.date.getDate() %><sup><%= getDateSuffix(saleItem.date) %></sup></td>
+                        <td class="col-left"><%= saleItem.description %></td>
+                        <td class="hide-mobile"><%= saleItem.quantity %></td>
+                        <td class="hide-mobile"><%= saleItem.rate %></td>
+                        <td class="hide-mobile"><%= saleItem.discount %></td>
+                        <td><%= saleItem.total %></td>
+                    </tr>
+                <% }) %>
+                <tr id="total-row">
+                    <td colspan="2">TOTAL</td>
+                    <td></td>
+                    <td class="hide-mobile"></td>
+                    <td class="hide-mobile"></td>
+                    <td colspan="2"><%= totalSales.toLocaleString() %></td>
+                </tr>   
+            </tbody>
+        </table>
+    </div>
+
+    <div class="btn-container">
+        <button id="open-sale-form-btn" class="open-form-btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
+    </div>
+    
+    <div>
+        <dialog id="create-sale-form" class="create-form">
+            <form id="new-sale-form">
+                <h3>Add Sale</h3>
+                <label for="newSaleDate">Date</label>
+                <input type="date" name="newSaleDate" id="newSaleDate" required>
+
+                <label for="newSaleDescription">Description</label>
+                <input type="text" name="newSaleDescription" id="newSaleDescription" required>
+
+                <label for="newSaleQTY">Quantity</label>
+                <input type="number" name="newSaleQTY" id="newSaleQTY" value="1" required>
+
+                <label for="newSaleRate">Rate</label>
+                <input type="number" name="newSaleRate" id="newSaleRate" required>
+
+                <label for="newSaleDiscount">Discount</label>
+                <input type="number" name="newSaleDiscount" id="newSaleDiscount" value="0" required>
+                <div class="form-btn-container">
+                    <button type="button" id="cancel-sale-form-btn" class="cancel-form-btn">Cancel</button>
+                    <button type="submit" id="submit-sale-form-btn" class="submit-form-btn">Add</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+    
+    <div>
+        <dialog id="delete-sale" class="delete-form">
+            <h3>Confirm</h3>
+            <div class="form-btn-container">
+                <button id="cancel-delete-sale-btn" class="cancel-delete-btn">Cancel</button>
+                <button id="delete-sale-btn" class="delete-btn">Delete</button>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>
