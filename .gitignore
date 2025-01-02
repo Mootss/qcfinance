@@ -1,3 +1,4 @@
 node_modules
+package-lock.json
 salesData.json
-expenseData.json
+expensesData.json
