@@ -21,13 +21,18 @@ const mongoose = require("mongoose")
 const multer = require('multer')
 const Sale = require("./models/sale")
 const Expense = require("./models/expense")
-const PORT = 3000
+const dotenv = require("dotenv")
+dotenv.config()
+const mongoStore = require("connect-mongo")
+const PORT = process.env.PORT || 3000
 
 app.use(session({
     secret: "SuperDuperSecretThalhudhandi",
     resave: false,
-    saveUninitialized: true,
-    cookie: { secure: false }
+    saveUninitialized: false,
+    store: mongoStore.create({
+        mongoUrl: process.env.MONGODB_CONNECT_URI
+    })
 }))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, "public")))
@@ -77,12 +82,11 @@ app.get("/login", (req, res) => {
     res.render("login")
 }) 
 app.post("/login", (req, res) => {
-    const correctHash = "3d1e557b540ac045b3b327994a351f08a443f9216f9b2b8d3a0f42b58671ac83"
     // TODO: store hash in env 
     const crypto = require("crypto")
     const hash = crypto.createHash('sha256').update(req.body.password).digest('hex')
     
-    if (hash === correctHash) {
+    if (hash === process.env.PASSWORD_HASH) {
         req.session.isLoggedIn = true
         res.redirect("/")
         console.log("(SUCCESS) Login")
@@ -315,10 +319,9 @@ function getDateSuffix(date) { // returns date suffix
 
 // database functions
 async function connectDB () {
-    const uri = "mongodb+srv://moots:Moots123.@cluster.v6aa6.mongodb.net/finance?retryWrites=true&w=majority&appName=cluster" 
     if (mongoose.connection.readyState === 0) {
         try {
-            await mongoose.connect(uri)
+            await mongoose.connect(process.env.MONGODB_CONNECT_URI)
             console.log("MongoDB connected!")
         } catch (error) {
             console.log(error)
