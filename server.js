@@ -16,7 +16,7 @@ cookies?
 const express = require("express")
 const app = express()
 const path = require("path")
-const session = require('express-session');
+const session = require('express-session')
 const mongoose = require("mongoose")
 const multer = require('multer')
 const Sale = require("./models/sale")
@@ -24,7 +24,11 @@ const Expense = require("./models/expense")
 const dotenv = require("dotenv")
 dotenv.config()
 const mongoStore = require("connect-mongo")
+const e = require("express")
+const expense = require("./models/expense")
 const PORT = process.env.PORT || 3000
+
+const monthNumToName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 app.use(session({
     secret: "SuperDuperSecretThalhudhandi",
@@ -36,75 +40,24 @@ app.use(session({
 }))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, "public")))
-// app.use(express.json())
 
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
 app.get("/", authLogin, async (req, res) => {
-    const currentDate =  new Date()
-    const queryYear = currentDate.getFullYear()
-    const queryMonth = currentDate.getMonth() // 0 based to 1 based
+    let totalSales = await getMonthData(Sale)
+    let totalExpenses = await getMonthData(Expense)
+    totalSales = Math.round(totalSales.total)
+    totalExpenses = Math.round(totalExpenses.total)
 
-    let salesList
-    try {
-        salesList = await Sale.find()
-            .where('date').gte(new Date(queryYear, queryMonth, 1)) 
-            .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
-    } catch (e) {
-            console.error("Error: ", e)
-        }
+    const historyData = await getHistoryData()
 
-    let expensesList
-    try {
-        expensesList = await Expense.find()
-            .where('date').gte(new Date(queryYear, queryMonth, 1)) 
-            .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
-    } catch (e) {
-            console.error("Error: ", e)
-        }
-
-    let totalExpenses = 0
-    expensesList.forEach(expenseItem => { totalExpenses += expenseItem.total })
-    let totalSales = 0 
-    salesList.forEach(saleItem => { totalSales += saleItem.total })
-
-    totalSales = Math.round(totalSales)
-    totalExpenses = Math.round(totalExpenses)
-
-
-    historyData = {
-        year2024: [
-            {
-                month: "September",
-                sales: "27,345",
-                expenses: "6,003",
-                profit: "21,342"
-            },
-            {
-                month: "October",
-                sales: "25,675",
-                expenses: "8,216",
-                profit: "17,459"
-            },
-            {
-                month: "November",
-                sales: "34,655",
-                expenses: "9,327",
-                profit: "25,328"
-            },{
-                month: "December",
-                sales: "35,810",
-                expenses: "7,712",
-                profit: "28,098"
-            },
-        ]
-    }
     res.render("index", {
         totalSales, 
         totalExpenses,
         historyData
    })
+   console.log("(INDEX)")
 })
 
 
@@ -127,45 +80,21 @@ app.post("/login", (req, res) => {
     }
 }) 
 
-const monthNumToName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 app.get("/sales", authLogin, async (req, res) => {
     try {    
-        const currentDate =  new Date()
-        const currentYear = currentDate.getFullYear()
-        const currentMonth = currentDate.getMonth() + 1 // 0 based to 1 based
-
-        let queryDate = req.query.date ?? `${currentYear}-${currentMonth}`
-        let [queryYear, queryMonth] = queryDate.split('-').map(Number)
-        queryMonth -= 1 // idk why this works but it does 
-
-        let monthName = monthNumToName[queryMonth]
-        // TLDR: if date inputed, use that, else use current date
-
-        const dateList = createDateList(currentDate)
-        let salesList
-        try {
-            salesList = await Sale.find()
-                .where('date').gte(new Date(queryYear, queryMonth, 1)) 
-                .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
-        } catch (e) {
-                console.error("Error: ", e)
-            }
-        salesList.sort((a, b) => {
-            return a.date.getDate() - b.date.getDate()
-        })
-        let totalSales = 0 // calculate total for all sales
-        salesList.forEach(saleItem => { totalSales += saleItem.total })
+        data = await getMonthData(Sale, req.query.date)
+        const [salesList, totalSales, monthName, dateList] = [data.dataList, data.total, data.monthName, data.dateList]
 
         res.render("sales", {
             salesList,
-            getDateSuffix,
             totalSales,
             monthName, // selected, query month name
             dateList, 
+            getDateSuffix, // func
             })
         console.log("(GET SALES)")
     } catch (e) {
-        console.log("Error: ", e.message)
+        console.log("Error: ", e)
     } 
 })
 app.post("/sales", multer().none(), async (req, res) => {
@@ -213,37 +142,15 @@ app.delete("/sales/:id", multer().none(), async(req, res) => {
 
 app.get("/expenses", authLogin, async (req, res) => { // ctrl c ctrl v  app.get(/sales)
     try {    
-        const currentDate =  new Date()
-        const currentYear = currentDate.getFullYear()
-        const currentMonth = currentDate.getMonth() + 1 // 0 based to 1 based
-
-        let queryDate = req.query.date ?? `${currentYear}-${currentMonth}`
-        let [queryYear, queryMonth] = queryDate.split('-').map(Number)
-        queryMonth -= 1
-
-        let monthName = monthNumToName[queryMonth]
-
-        const dateList = createDateList(currentDate)
-        let expensesList
-        try {
-            expensesList = await Expense.find()
-                .where('date').gte(new Date(queryYear, queryMonth, 1)) 
-                .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
-        } catch (e) {
-                console.error("Error: ", e)
-            }
-            expensesList.sort((a, b) => {
-            return a.date.getDate() - b.date.getDate()
-        })
-        let totalExpenses = 0
-        expensesList.forEach(expenseItem => { totalExpenses += expenseItem.total })
+        data = await getMonthData(Expense, req.query.date)
+        const [expensesList, totalExpenses, monthName, dateList] = [data.dataList, data.total, data.monthName, data.dateList]
 
         res.render("expenses", {
             expensesList,
-            getDateSuffix,
             totalExpenses,
             monthName, // selected, query month name
             dateList, 
+            getDateSuffix,
             })
         console.log("(GET EXPENSES)")
     } catch (e) {
@@ -425,4 +332,57 @@ async function uploadExpensesJSON() {
         await mongoose.disconnect();
         console.log('DATA TRANSFERRED TO MONGODB')
     } 
+}
+
+async function getMonthData(model, inputDate) { // takes inputDate as "year-month" format
+    const currentDate =  new Date()
+    const currentYear = currentDate.getFullYear()
+    const currentMonth = currentDate.getMonth() + 1 // 0 based to 1 based
+
+    const queryDate = inputDate || `${currentYear}-${currentMonth}`
+    let [queryYear, queryMonth] = queryDate.split('-').map(Number)
+    queryMonth -= 1 // i forgot why this works but it does 
+    // TLDR: if date inputed use that, else use current date
+
+    let dataList
+    try {
+        dataList = await model.find()
+            .where('date').gte(new Date(queryYear, queryMonth, 1)) 
+            .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
+    } catch (e) {
+            console.error("Error: ", e)
+        }
+
+    dataList.sort((a, b) => {
+        return a.date.getDate() - b.date.getDate()
+    })
+
+    let total = 0 
+    dataList.forEach(item => { total += item.total }) // calculate total
+    
+    const monthName = monthNumToName[queryMonth]
+    const dateList = createDateList(currentDate)
+
+    return { dataList, total, dateList, monthName }
+}
+
+async function getHistoryData() {
+    let historyData = []
+    const dateList = createDateList(new Date())
+
+    for (let i = 0; i < dateList.length; i++) {
+        salesData = await getMonthData(Sale, `${dateList[i].year}-${dateList[i].monthNum}`)
+        expensesData = await getMonthData(Expense, `${dateList[i].year}-${dateList[i].monthNum}`)
+
+        historyData.push({
+            year: dateList[i].year,
+            month: dateList[i].monthName,
+            sales: Math.round(salesData.total).toLocaleString(),
+            expenses: Math.round(expensesData.total).toLocaleString(),
+            profit: Math.round((salesData.total - expensesData.total)).toLocaleString(),
+        })
+    }
+
+    console.log(historyData)
+    return historyData
 }
