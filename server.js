@@ -71,9 +71,39 @@ app.get("/", authLogin, async (req, res) => {
 
     totalSales = Math.round(totalSales)
     totalExpenses = Math.round(totalExpenses)
+
+
+    historyData = {
+        year2024: [
+            {
+                month: "September",
+                sales: "27,345",
+                expenses: "6,003",
+                profit: "21,342"
+            },
+            {
+                month: "October",
+                sales: "25,675",
+                expenses: "8,216",
+                profit: "17,459"
+            },
+            {
+                month: "November",
+                sales: "34,655",
+                expenses: "9,327",
+                profit: "25,328"
+            },{
+                month: "December",
+                sales: "35,810",
+                expenses: "7,712",
+                profit: "28,098"
+            },
+        ]
+    }
     res.render("index", {
         totalSales, 
-        totalExpenses
+        totalExpenses,
+        historyData
    })
 })
 
@@ -286,7 +316,7 @@ function authLogin(req, res, next) { // to force the user log in
     } else { res.redirect("/login") }
 }
 
-function createDateList(currentDate){ // returns list of dates available for query
+function createDateList(currentDate){ // takes date obj, returns list of dates available for query
     let startDate = new Date(2024, 8, 1) // start: 2024 september
     let dateList = []
     while (
