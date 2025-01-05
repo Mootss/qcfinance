@@ -79,7 +79,8 @@ header img{
 /* INDEX */
 
 #sales-btn,
-#expenses-btn{
+#expenses-btn,
+.download-btn{
     background-color: #018b6f;
     border: none;
     border-radius: 5px;
@@ -95,6 +96,13 @@ header img{
 }
 #expenses-btn{
     background-color: #ee5c2b;
+}
+.download-btn{
+    background-color: #65a6cf;
+    margin-top: 20px;
+}
+.download-btn:hover{
+    background-color: #23638b;
 }
 #sales-btn:hover{
     background-color: #036f5a;

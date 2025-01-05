@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="shortcut icon" href="/img/qcfinance-favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/download.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance"></a>
+    </header>
+
+    <div class="btn-container">
+        <h2 style="margin-bottom: 10px;">Select Download</h2>
+    </div>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <form id="download-form" action="/download/excel" method="GET">
+                <select name="download" id="select-download" class="select-box">
+                    <option value="all-sales">All Sales</option>
+                </select>
+            </form>
+            <span class="select-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button type="submit" id="download-excel-btn" class="download-btn"><i class="fa fa-download"></i>  Download Excel</button>
+    </div>
+</body>
+</html> 

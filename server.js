@@ -1,4 +1,4 @@
-// last update: 31-dec-2024
+// last update: 04-jan-2025
 // why tf did i write 500 lines in one file instead of using routers fml
 
 /*
@@ -6,10 +6,8 @@ TODO:
 clean up this messy ahh spaghetti code, use routers / middleware? convert functions into modules
 Add a sort option to table to sort by for ex: date/total etc
 Add red asterik to ones with discounts
-Make HTML table no. padding smaller
 Add a floating button to bring user to bottom of page
 Add a graph to index page
-clean up sales.js and expense.js  /  refactor
 cookies?
 */
 
@@ -24,8 +22,7 @@ const Expense = require("./models/expense")
 const dotenv = require("dotenv")
 dotenv.config()
 const mongoStore = require("connect-mongo")
-const e = require("express")
-const expense = require("./models/expense")
+const ExcelJS = require("exceljs")
 const PORT = process.env.PORT || 3000
 
 const monthNumToName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -201,6 +198,158 @@ app.delete("/expenses/:id", multer().none(), async(req, res) => {
 })
 
 
+app.get("/download", authLogin, (req, res) => {
+    res.render("download")
+})
+
+app.get("/download/excel", async (req, res) => {
+    let download = req.query.download
+    //res.render("download")
+    console.log("(DOWNLOAD)")
+    console.log(download)
+    if (download === "all-sales") {
+        try {
+
+            const workbook = new ExcelJS.Workbook()
+            salesList = await Sale.find()
+            dateList = createDateList(new Date())
+    
+            dateList.forEach((date) => { // create new sheet for each year-month
+                totalForDate = 0
+                const sheet = workbook.addWorksheet(`${date.year} ${date.monthName}`)
+    
+                const mainHeading = sheet.addRow([`Monthly Sales ${date.monthName} ${date.year}`]) // idk why but this doesnt work, value doesnt get assigned
+                sheet.mergeCells("A1:G1")
+                mainHeading.font = { bold: true, size: 14 }
+                mainHeading.alignment = { horizontal: "center"}
+        
+                sheet.columns = [
+                    { header: "No.", key: "no", width: 5 },
+                    { header: "Date", key: "date", width: 10 },
+                    { header: "Description", key: "description", width: 35 },
+                    { header: "QTY", key: "qty", width: 7 },
+                    { header: "Rate", key: "rate", width: 10 },
+                    { header: "Discount", key: "discount", width: 8 },
+                    { header: "Total", key: "total", width: 10 },
+                ] 
+        
+                const tableHeading = sheet.addRow(["No.", "Date", "Description", "QTY", "Rate", "Discount", "Total"])
+                tableHeading.font = { bold: true }
+        
+                sheet.getRow(1).getCell(1).value = "Monthly Sales September 2024" // re-assigning it since the previous one doesnt work
+                sheet.getRow(1).getCell(1).fill = {
+                    type: "pattern",
+                    pattern:"solid",
+                    fgColor:{argb: "FFD9D9D9"}      
+        
+                } 
+                sheet.getRow(1).getCell(1).border = {
+                    top: {style:'thin'},
+                    left: {style:'thin'},
+                    bottom: {style:'thin'},
+                    right: {style:'thin'}
+                }
+        
+                tableHeading.eachCell((cell, colNumber) => {
+                    cell.fill = {
+                        type: "pattern",
+                        pattern:"solid",
+                        fgColor:{argb: "FFD9D9D9"}
+                    }
+                    cell.border = {
+                        top: {style:'thin'},
+                        left: {style:'thin'},
+                        bottom: {style:'thin'},
+                        right: {style:'thin'}
+                    }
+                    if (colNumber === 2) { cell.alignment = { horizontal: "center" } }
+                    if (colNumber === 4) { cell.alignment = { horizontal: "center" } }
+                    if (colNumber === 5) { cell.alignment = { horizontal: "center" } }
+                    if (colNumber === 6) { cell.alignment = { horizontal: "center" } }
+                    if (colNumber === 7) { cell.alignment = { horizontal: "center" } }
+                })
+                
+                index = 1
+                salesList.forEach((sale) => { // add row per obj in list
+                    if (date.year === new Date(sale.date).getFullYear() &&
+                        date.monthNum === new Date(sale.date).getMonth() + 1) { // +1 cuz createDateList() returns 1 based month num
+                        
+                        row = sheet.addRow({ // add data
+                            no: index,
+                            date: new Date(sale.date),
+                            description: sale.description,
+                            qty: sale.quantity,
+                            rate: parseFloat(sale.rate),
+                            discount: sale.discount,
+                            total: sale.total,
+                        })
+                        row.eachCell((cell, colNumber) => { // style row
+                            cell.border = {
+                                top: {style:'thin'},
+                                left: {style:'thin'},
+                                bottom: {style:'thin'},
+                                right: {style:'thin'}
+                            }
+                            if (colNumber === 1) { cell.alignment = { horizontal: "center" } }
+                            if (colNumber === 2) { cell.alignment = { horizontal: "center" } }
+                            if (colNumber === 4) { cell.alignment = { horizontal: "center" } }
+                            if (colNumber === 5) { cell.alignment = { horizontal: "right" } }
+                            if (colNumber === 6) { cell.alignment = { horizontal: "right" } }
+                            if (colNumber === 7) { cell.alignment = { horizontal: "right" } }
+                        })
+    
+                        totalForDate += sale.total
+                        index ++ 
+                    }
+                })
+                totalRow = sheet.addRow(["Total Sales"])
+                sheet.mergeCells(`A${totalRow.number}:F${totalRow.number}`)
+                sheet.getRow(totalRow.number).getCell(7).value = totalForDate.toLocaleString()
+                sheet.getRow(totalRow.number).getCell(7).alignment = { horizontal: "right" }
+                
+                totalRow.eachCell((cell) => {
+                    cell.fill = {
+                        type: "pattern",
+                        pattern:"solid",
+                        fgColor:{argb: "FFD9D9D9"}      
+                    } 
+                    cell.border = {
+                        top: {style:'thin'},
+                        left: {style:'thin'},
+                        bottom: {style:'thin'},
+                        right: {style:'thin'}
+                    }
+                    cell.font = { bold: true }
+                })
+            })
+
+            currentDate = new Date()
+            let filename = `All Sales (${currentDate.getDate()}-${currentDate.getMonth()+1}-${currentDate.getFullYear()}).xlsx`
+
+            // Write the file to a buffer in memory (instead of writing to disk)
+            const buffer = await workbook.xlsx.writeBuffer();
+
+            // Set the appropriate headers for file download
+            res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+            res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+
+            // Send the Excel file as a response
+            res.send(buffer)
+
+            //currentDate = new Date()
+            // await workbook.xlsx.writeFile(`All Sales (${currentDate.getDate()}-${currentDate.getMonth()+1}-${currentDate.getFullYear()}).xlsx`)
+            console.log("EXCEL CREATED (ALL SALES)")
+    
+        } catch (error) {
+            console.error(error)
+        }
+    }
+    else {
+        res.render("download")
+    }
+})
+
+
 app.listen(PORT, async () => {
     console.log("Server online! PORT: ", PORT)
     await connectDB()
@@ -233,7 +382,7 @@ function createDateList(currentDate){ // takes date obj, returns list of dates a
         dateList.push({
             year: startDate.getFullYear(),
             monthName: monthNumToName[startDate.getMonth()],
-            monthNum: startDate.getMonth() + 1
+            monthNum: startDate.getMonth() + 1 // 0 to 1 based????
         })
         startDate.setMonth(startDate.getMonth() + 1) // incrementing month, until match current date
     }
@@ -383,6 +532,5 @@ async function getHistoryData() {
         })
     }
 
-    console.log(historyData)
     return historyData
 }
