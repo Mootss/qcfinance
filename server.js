@@ -11,21 +11,23 @@ Add a graph to index page
 cookies?
 */
 
+const dotenv = require("dotenv")
 const express = require("express")
-const app = express()
 const path = require("path")
 const session = require('express-session')
-const mongoose = require("mongoose")
 const multer = require('multer')
-const Sale = require("./models/sale")
-const Expense = require("./models/expense")
-const dotenv = require("dotenv")
-dotenv.config()
 const mongoStore = require("connect-mongo")
 const ExcelJS = require("exceljs")
-const PORT = process.env.PORT || 3000
 
-const monthNumToName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+const Sale = require("./models/sale")
+const Expense = require("./models/expense")
+
+const { connectDB, disconnectDB, getMonthData, getHistoryData } = require("./utils/databaseUtils")
+const { createDateList, getDateSuffix } = require("./utils/dateUtils")
+
+dotenv.config()
+const app = express()
+const PORT = process.env.PORT || 3000
 
 app.use(session({
     secret: "SuperDuperSecretThalhudhandi",
@@ -370,167 +372,4 @@ function authLogin(req, res, next) { // to force the user log in
     if (req.session.isLoggedIn) {
         next()
     } else { res.redirect("/login") }
-}
-
-function createDateList(currentDate){ // takes date obj, returns list of dates available for query
-    let startDate = new Date(2024, 8, 1) // start: 2024 september
-    let dateList = []
-    while (
-        startDate.getFullYear() < currentDate.getFullYear() ||
-        (startDate.getFullYear() === currentDate.getFullYear() && startDate.getMonth() <= currentDate.getMonth()))
-    {
-        dateList.push({
-            year: startDate.getFullYear(),
-            monthName: monthNumToName[startDate.getMonth()],
-            monthNum: startDate.getMonth() + 1 // 0 to 1 based????
-        })
-        startDate.setMonth(startDate.getMonth() + 1) // incrementing month, until match current date
-    }
-    return dateList
-}
-
-function getDateSuffix(date) { // returns date suffix
-    const day = date.getDate()
-    let suffix = "th"
-    if (day % 10 === 1 && day !== 11) {
-        suffix = "st"
-    } else if (day % 10 === 2 && day !== 12) {
-        suffix = "nd"
-    } else if (day % 10 === 3 && day !== 13) {
-        suffix = "rd"
-    }
-
-    return suffix
-}
-
-// database functions
-async function connectDB () {
-    if (mongoose.connection.readyState === 0) {
-        try {
-            await mongoose.connect(process.env.MONGODB_CONNECT_URI)
-            console.log("MongoDB connected!")
-        } catch (error) {
-            console.log(error)
-        }
-        
-    }      
-}
-
-async function disconnectDB () {
-    await mongoose.disconnect()
-    console.log("MongoDB disconnected!")
-}
-
-async function createSale(data) {
-    try {
-        await Sale.create(data)
-    } catch (e) {
-        console.log("Error: ", e.message)
-    }
-}
-
-async function uploadSalesJSON() { // to upload existing data to db, slow asf but it works so idc
-    try {
-        connectDB()
-        const salesJSON = require("./salesData.json")
-        for (let i=0; i < salesJSON.length; i++) {
-            const dateJSON = salesJSON[i].Date
-            const dateObj = new Date(`${dateJSON}z`)
-            console.log(dateObj)
-            await Sale.create({
-                date: dateObj,
-                description: salesJSON[i].Description,
-                quantity: salesJSON[i].Quantity,
-                rate: salesJSON[i].Rate,
-                discount: salesJSON[i].Discount,
-                total: salesJSON[i].Total 
-            })
-        }   
-
-    } catch (e) {
-        console.log("Error ", e)
-        res.status(500).send('Database error')
-    } finally {
-        await mongoose.disconnect();
-        console.log('Connection closed!')
-    } 
-}
-
-async function uploadExpensesJSON() {
-    try {
-        connectDB()
-        const expensesJSON = require("./expensesData.json")
-        for (let i=0; i < expensesJSON.length; i++) {
-            const dateJSON = expensesJSON[i].Date
-            const dateObj = new Date(`${dateJSON}z`)
-            console.log(dateObj)
-            await Expense.create({
-                date: dateObj,
-                description: expensesJSON[i].Description,
-                quantity: expensesJSON[i].Quantity,
-                rate: expensesJSON[i].Rate,
-                unit: expensesJSON[i].Unit,
-                gst: expensesJSON[i].GST,
-                total: expensesJSON[i].Total 
-            })
-        }   
-
-    } catch (e) {
-        console.log("Error ", e)
-    } finally {
-        await mongoose.disconnect();
-        console.log('DATA TRANSFERRED TO MONGODB')
-    } 
-}
-
-async function getMonthData(model, inputDate) { // takes inputDate as "year-month" format
-    const currentDate =  new Date()
-    const currentYear = currentDate.getFullYear()
-    const currentMonth = currentDate.getMonth() + 1 // 0 based to 1 based
-
-    const queryDate = inputDate || `${currentYear}-${currentMonth}`
-    let [queryYear, queryMonth] = queryDate.split('-').map(Number)
-    queryMonth -= 1 // i forgot why this works but it does 
-    // TLDR: if date inputed use that, else use current date
-
-    let dataList
-    try {
-        dataList = await model.find()
-            .where('date').gte(new Date(queryYear, queryMonth, 1)) 
-            .where('date').lt(new Date(queryYear, queryMonth + 1, 1))
-    } catch (e) {
-            console.error("Error: ", e)
-        }
-
-    dataList.sort((a, b) => {
-        return a.date.getDate() - b.date.getDate()
-    })
-
-    let total = 0 
-    dataList.forEach(item => { total += item.total }) // calculate total
-    
-    const monthName = monthNumToName[queryMonth]
-    const dateList = createDateList(currentDate)
-
-    return { dataList, total, dateList, monthName }
-}
-
-async function getHistoryData() {
-    let historyData = []
-    const dateList = createDateList(new Date())
-
-    for (let i = 0; i < dateList.length; i++) {
-        salesData = await getMonthData(Sale, `${dateList[i].year}-${dateList[i].monthNum}`)
-        expensesData = await getMonthData(Expense, `${dateList[i].year}-${dateList[i].monthNum}`)
-
-        historyData.push({
-            year: dateList[i].year,
-            month: dateList[i].monthName,
-            sales: Math.round(salesData.total).toLocaleString(),
-            expenses: Math.round(expensesData.total).toLocaleString(),
-            profit: Math.round((salesData.total - expensesData.total)).toLocaleString(),
-        })
-    }
-
-    return historyData
 }
