@@ -20,8 +20,7 @@ const mongoStore = require("connect-mongo")
 const Sale = require("./models/sale")
 const Expense = require("./models/expense")
 
-const { connectDB, disconnectDB, getMonthData, getHistoryData } = require("./utils/databaseUtils")
-const { createDateList, getDateSuffix } = require("./utils/dateUtils")
+const { connectDB, disconnectDB, getMonthData, getAllData } = require("./utils/databaseUtils")
 
 dotenv.config()
 const app = express()
@@ -52,7 +51,7 @@ app.get("/", authLogin, async (req, res) => {
     totalSales = Math.round(totalSales.total)
     totalExpenses = Math.round(totalExpenses.total)
 
-    const historyData = await getHistoryData()
+    const historyData = await getAllData()
 
     res.render("index", {
         totalSales, 

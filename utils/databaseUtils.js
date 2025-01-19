@@ -74,6 +74,49 @@ async function getHistoryData() { // horribily inefficient, future me pls refact
     return historyData
 }
 
+async function getAllData() { // slightly better version
+    let allData = []
+    const dateList = createDateList(new Date())
+
+    let salesData
+    let expensesData
+    try {
+        salesData = await Sale.find()
+        expensesData = await Expense.find()
+
+        for (let i = 0; i < dateList.length; i++) {
+
+            let salesTotal = 0
+            salesData.forEach((sale) => {
+                if (new Date(sale.date).getMonth()+1 === dateList[i].monthNum && // +1 bec createDateList returns month in 1 based
+                    new Date(sale.date).getFullYear() === dateList[i].year) {
+                        salesTotal += sale.total
+                }
+            })
+
+            let expensesTotal = 0
+            expensesData.forEach((expense) => {
+                if (new Date(expense.date).getMonth()+1 === dateList[i].monthNum && 
+                    new Date(expense.date).getFullYear() === dateList[i].year) {
+                        expensesTotal += expense.total
+                }
+            })
+
+            allData.push({
+                year: dateList[i].year,
+                month: dateList[i].monthName,
+                sales: Math.round(salesTotal).toLocaleString(),
+                expenses: Math.round(expensesTotal).toLocaleString(),
+                profit: Math.round(salesTotal - expensesTotal).toLocaleString(),
+            })
+        }
+    } catch (e) {
+            console.error("Error: ", e)
+        }
+    
+    return allData
+}
+
 async function createSale(data) {
     try {
         await Sale.create(data)
@@ -136,4 +179,4 @@ async function uploadExpensesJSON() {
     } 
 }
 
-module.exports = { connectDB, disconnectDB, getMonthData, getHistoryData }
+module.exports = { connectDB, disconnectDB, getMonthData, getAllData }
