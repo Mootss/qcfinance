@@ -11,80 +11,88 @@
     <header>
         <img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance">
     </header>
-    <div class="btn-container">
-        <button id="sales-btn" type="button" onclick="location.href='/sales'">
-            Sales
-        </button>
-        <button id="expenses-btn" type="button" onclick="location.href='/expenses'">
-            Expenses
-        </button>
+
+    <div class="index-wrapper">
+        <div class="flex-grow">
+            <div class="btn-container">
+                <button id="sales-btn" type="button" onclick="location.href='/sales'">
+                    Sales
+                </button>
+                <button id="expenses-btn" type="button" onclick="location.href='/expenses'">
+                    Expenses
+                </button>
+            </div>
+            
+            <div class="dashboard">
+                <h2>January</h2>
+                <div>
+                    <p>Income</p>
+                    <p> <%= totalSales.toLocaleString() %> </p>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <p> <%= totalExpenses.toLocaleString() %> </p>
+                </div>
+                <div>
+                    <p>Net Profit</p>
+                    <p> <%= (totalSales - totalExpenses).toLocaleString() %> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-grow reverse-order">
+            <div class="history">
+                <h2>Monthly Profits</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Sales</th>
+                            <th>Expenses</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024</td>
+                        </tr>
+
+                        <% for( let i = 0; i < historyData.length; i++ ) { %>
+                            <% if (historyData[i].year == 2024) { %>
+                                <tr>
+                                    <td><%= historyData[i].month %></td>
+                                    <td><%= historyData[i].sales %></td>
+                                    <td>-<%= historyData[i].expenses %></td>
+                                    <td><%= historyData[i].profit %></td>
+                                </tr>
+                            <% } %>
+                        <% } %>
+
+                        <tr>
+                            <td>2025</td>
+                        </tr>
+
+                        <% for( let i = 0; i < historyData.length; i++ ) { %>
+                            <% if (historyData[i].year == 2025) { %>
+                                <tr>
+                                    <td><%= historyData[i].month %></td>
+                                    <td><%= historyData[i].sales %></td>
+                                    <td>-<%= historyData[i].expenses %></td>
+                                    <td><%= historyData[i].profit %></td>
+                                </tr>
+                            <% } %>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-container">
+                <button class="download-btn" id="download-page-btn" type="button" onclick="location.href='/download'">
+                    Download Data
+                </button>
+            </div>
+        </div>
     </div>
     
-    <div class="dashboard">
-        <h2>January</h2>
-        <div>
-            <p>Income</p>
-            <p> <%= totalSales.toLocaleString() %> </p>
-        </div>
-        <div>
-            <p>Expenses</p>
-            <p> <%= totalExpenses.toLocaleString() %> </p>
-        </div>
-        <div>
-            <p>Net Profit</p>
-            <p> <%= (totalSales - totalExpenses).toLocaleString() %> </p>
-        </div>
-    </div>
-   
-    <div class="history">
-        <h2>Monthly Profits</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Sales</th>
-                    <th>Expenses</th>
-                    <th>Profit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2024</td>
-                </tr>
-
-                <% for( let i = 0; i < historyData.length; i++ ) { %>
-                    <% if (historyData[i].year == 2024) { %>
-                        <tr>
-                            <td><%= historyData[i].month %></td>
-                            <td><%= historyData[i].sales %></td>
-                            <td>-<%= historyData[i].expenses %></td>
-                            <td><%= historyData[i].profit %></td>
-                        </tr>
-                    <% } %>
-                <% } %>
-
-                <tr>
-                    <td>2025</td>
-                </tr>
-
-                <% for( let i = 0; i < historyData.length; i++ ) { %>
-                    <% if (historyData[i].year == 2025) { %>
-                        <tr>
-                            <td><%= historyData[i].month %></td>
-                            <td><%= historyData[i].sales %></td>
-                            <td>-<%= historyData[i].expenses %></td>
-                            <td><%= historyData[i].profit %></td>
-                        </tr>
-                    <% } %>
-                <% } %>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="btn-container">
-        <button class="download-btn" id="download-page-btn" type="button" onclick="location.href='/download'">
-            Download Data
-        </button>
-    </div>
 </body>
 </html>

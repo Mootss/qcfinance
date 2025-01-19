@@ -78,6 +78,28 @@ header img{
 
 /* INDEX */
 
+@media (min-width: 850px){
+    .index-wrapper{
+        display: flex; 
+    }
+    .flex-grow{
+        flex-grow: 1;
+    }
+    .dashboard{
+        margin-bottom: 10px;
+    }
+    .reverse-order{
+        display: flex;
+        flex-direction: column;
+    }
+    .reverse-order div:nth-of-type(1){
+        order: 2;
+    }
+    .reverse-order div:nth-of-type(2){
+        order: 1;
+    }
+}
+
 #sales-btn,
 #expenses-btn,
 .download-btn{
@@ -98,8 +120,12 @@ header img{
     background-color: #ee5c2b;
 }
 .download-btn{
-    background-color: #65a6cf;
+    background-color: #4688b1;
+}
+.download-type{
     margin-top: 20px;
+    flex-grow: 0;
+    padding: 12px;
 }
 .download-btn:hover{
     background-color: #23638b;
@@ -125,6 +151,7 @@ header img{
     box-shadow: 0 0 5px 0 #dedede;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 75px;
 }
 .dashboard h2{
     text-decoration: underline;
@@ -161,11 +188,10 @@ header img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 75px;
 }
 .history table{
     border-collapse: collapse;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 25px 0;
     font-size: 0.9em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
@@ -184,6 +210,7 @@ header img{
 .history table td{
     border: 1px solid rgb(220, 220, 220);
     text-align: center;
+    background-color: #fff;
 }
 .history tbody td:last-of-type{
     font-weight: bold;
