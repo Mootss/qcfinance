@@ -2,20 +2,23 @@ document.getElementById("download-excel-btn").addEventListener("click", async ()
     downloadForm = document.getElementById("download-form")
     downloadForm.submit()
 
-    const response = await fetch("/download/excel")
+    const response = await fetch("/download", {
+        method: "POST",
+        body: downloadForm
+    })
 
-    const blob = await response.blob();
+    const blob = await response.blob()
     if(response) {
-        console.log("skibbidi")
         
-        // Create a temporary link element to trigger the download
-        const link = document.createElement("a");
-        const url = URL.createObjectURL(blob); // Create a URL for the blob
-        link.href = url;
-        link.download = "Sales Report.xlsx"; // Set the default download filename
-        document.body.appendChild(link);
-        link.click(); // Programmatically click the link to start the download
-        document.body.removeChild(link); // Clean up by removing the link
-        URL.revokeObjectURL(url); // Revoke the URL object to free up memory
+        const link = document.createElement("a")
+        const url = URL.createObjectURL(blob)
+        link.href = url
+        console.log(link)
+        link.download = ""
+        document.body.appendChild(link)
+        link.click()
+        // clean up after dwnload
+        document.body.removeChild(link)
+        URL.revokeObjectURL(url)
     }
 })

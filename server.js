@@ -1,14 +1,13 @@
-// last update: 04-jan-2025
-// why tf did i write 500 lines in one file instead of using routers fml
+// last update: 22-jan-2025
 
 /*
 TODO:
-clean up this messy ahh spaghetti code, use routers / middleware? convert functions into modules
+clean up this messy ahh spaghetti code, use middleware instead of passing authLogin() everywhere
 Add a sort option to table to sort by for ex: date/total etc
 Add red asterik to ones with discounts
 Add a floating button to bring user to bottom of page
 Add a graph to index page
-cookies?
+maybe rewrite the frontend with react
 */
 
 const dotenv = require("dotenv")
