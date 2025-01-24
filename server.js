@@ -1,4 +1,4 @@
-// last update: 22-jan-2025
+// last update: 24-jan-2025
 
 /*
 TODO:
@@ -30,8 +30,8 @@ const expensesRoute = require("./routes/Expenses")
 const downloadRoute = require("./routes/Download")
 const loginRoute = require("./routes/Login")
 
-app.use(session({
-    secret: "SuperDuperSecretThalhudhandi",
+app.use(session({ 
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     store: mongoStore.create({
