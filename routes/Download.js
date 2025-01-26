@@ -19,14 +19,15 @@ router.post("/", async (req, res) => {
     console.log(req.body)
     if (download === "all-sales") {
         const { buffer, filename } = await createSalesExcel()
-        
         res.setHeader('Content-Disposition', `attachment; filename="${filename}"`)
         res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
-
         res.send(buffer)
+
     } else if (download === "all-expenses") {
-        // createExpensesExcel()
-        console.log("")
+        const { buffer, filename } = await createExpensesExcel()
+        res.setHeader('Content-Disposition', `attachment; filename="${filename}"`)
+        res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+        res.send(buffer)
     }
     
     console.log(`(POST DOWNLOAD) ${download}`)
@@ -87,11 +88,19 @@ async function createSalesExcel() {
                     bottom: {style:'thin'},
                     right: {style:'thin'}
                 }
-                if (colNumber === 2) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 4) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 5) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 6) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 7) { cell.alignment = { horizontal: "center" } }
+                if (colNumber === 1 || colNumber === 2 || colNumber === 4) { 
+                    cell.alignment = { horizontal: "center" }
+                }
+
+                if (colNumber >= 5 && colNumber <= 7) { // for column 5, 6, 7 
+                    cell.alignment = { horizontal: "right" }
+                }
+
+                // if (colNumber === 2) { cell.alignment = { horizontal: "center" } }
+                // if (colNumber === 4) { cell.alignment = { horizontal: "center" } }
+                // if (colNumber === 5) { cell.alignment = { horizontal: "center" } }
+                // if (colNumber === 6) { cell.alignment = { horizontal: "center" } }
+                // if (colNumber === 7) { cell.alignment = { horizontal: "center" } }
             })
             
             index = 1
@@ -174,7 +183,7 @@ async function createExpensesExcel() {
             // totalForDate = 0
             const sheet = workbook.addWorksheet(`${date.year} ${date.monthName}`)
 
-            const mainHeading = sheet.addRow([`Monthly Expenses ${date.monthName} ${date.year}`]) // idk why but this doesnt work, value doesnt get assigned
+            const mainHeading = sheet.addRow([`Daily Expenses ${date.monthName} ${date.year}`]) // idk why but this doesnt work, value doesnt get assigned
             sheet.mergeCells("A1:G1")
             mainHeading.font = { bold: true, size: 14 }
             mainHeading.alignment = { horizontal: "center"}
@@ -185,15 +194,15 @@ async function createExpensesExcel() {
                 { header: "Item Description", key: "description", width: 35 },
                 { header: "Unit", key: "unit", width: 7 },
                 { header: "Rate", key: "rate", width: 7 },
-                { header: "Discount", key: "discount", width: 8 },
+                { header: "GST", key: "gst", width: 8 },
                 { header: "Total", key: "total", width: 10 },
             ] 
     
             // header row
-            const tableHeading = sheet.addRow(["No.", "Date", "Description", "QTY", "Rate", "Discount", "Total"])
+            const tableHeading = sheet.addRow(["Date", "QTY", "Item Description", "Unit", "Rate", "GST", "Total"])
             tableHeading.font = { bold: true }
     
-            sheet.getRow(1).getCell(1).value = `Monthly Sales ${date.monthName} ${date.year}` // re-assigning it since the previous one doesnt work
+            sheet.getRow(1).getCell(1).value = `Daily Expenses ${date.monthName} ${date.year}` // re-assigning it since the previous one doesnt work
             sheet.getRow(1).getCell(1).fill = {
                 type: "pattern",
                 pattern:"solid",
@@ -219,26 +228,28 @@ async function createExpensesExcel() {
                     bottom: {style:'thin'},
                     right: {style:'thin'}
                 }
-                if (colNumber === 2) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 4) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 5) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 6) { cell.alignment = { horizontal: "center" } }
-                if (colNumber === 7) { cell.alignment = { horizontal: "center" } }
+                if (colNumber === 1 || colNumber === 2 || colNumber === 4) { 
+                    cell.alignment = { horizontal: "center" }
+                }
+
+                if (colNumber >= 5 && colNumber <= 7) { // for column 5, 6, 7 
+                    cell.alignment = { horizontal: "right" }
+                }
             })
             
             index = 1
-            expenseList.forEach((sale) => { // add row per obj in list
-                if (date.year === new Date(sale.date).getFullYear() &&
-                    date.monthNum === new Date(sale.date).getMonth() + 1) { // +1 cuz createDateList() returns 1 based month num
+            expenseList.forEach((expense) => { // add row per obj in list
+                if (date.year === new Date(expense.date).getFullYear() &&
+                    date.monthNum === new Date(expense.date).getMonth() + 1) { // +1 cuz createDateList() returns 1 based month num
                     
                     row = sheet.addRow({ // add data
-                        no: index,
-                        date: new Date(sale.date),
-                        description: sale.description,
-                        qty: sale.quantity,
-                        rate: parseFloat(sale.rate),
-                        discount: sale.discount,
-                        total: { formula: `=(D${index+2}*E${index+2})-F${index+2}` },
+                        date: new Date(expense.date),
+                        qty: expense.quantity,
+                        description: expense.description,
+                        rate: parseFloat(expense.rate),
+                        unit: expense.unit,
+                        gst: { formula: `=(B${index+2}*E${index+2})*(8/100)` },
+                        total: { formula: `=(B${index+2}*E${index+2})+F${index+2}` },
                     })
                     row.eachCell((cell, colNumber) => { // style row
                         cell.border = {
@@ -253,7 +264,7 @@ async function createExpensesExcel() {
 
                         if (colNumber >= 5 && colNumber <= 7) { // for column 5, 6, 7 
                                 cell.alignment = { horizontal: "right" }
-                                cell.numFmt = "#,##0" // adds comma for 000s
+                                cell.numFmt = "#,##0.00" // adds comma for 000s
                             }
                     })
 
@@ -286,7 +297,7 @@ async function createExpensesExcel() {
         })
 
         currentDate = new Date()
-        let filename = `Sales Report (${currentDate.getDate()}-${currentDate.getMonth()+1}-${currentDate.getFullYear()}).xlsx`
+        let filename = `Expenses Report (${currentDate.getDate()}-${currentDate.getMonth()+1}-${currentDate.getFullYear()}).xlsx`
 
         const buffer = await workbook.xlsx.writeBuffer()
 

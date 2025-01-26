@@ -421,6 +421,29 @@ header img{
     transform: translateY(5px);
 }
 
+/* DOWNLOAD */
+
+.download-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-container{
+    border: 2px solid rgb(120, 120, 120);
+    padding: 50px;
+    padding-top: 20px;
+    box-shadow: 5px 5px 5px 0px #6e6e6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.dark-shadow{
+    box-shadow: 0px 0px 7px 0px #404040;
+}
 
 @media (max-width: 500px){
     .hide-mobile{

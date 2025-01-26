@@ -14,24 +14,28 @@
         <a href="/"><img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance"></a>
     </header>
 
-    <div class="btn-container">
-        <h2 style="margin-bottom: 10px;">Select Download</h2>
-    </div>
-
-    <div class="select-container">
-        <div class="select-wrapper">
-            <form id="download-form" action="/download" method="POST">
-                <select name="download" id="select-download" class="select-box">
-                    <option value="all-sales">All Sales</option>
-                    <!-- <option value="all-expenses">All Expenses</option> -->
-                </select>
-            </form>
-            <span class="select-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>
+    <div class="download-wrapper">
+        <div class="download-container">
+            <div class="btn-container">
+                <h2 style="margin-bottom: 25px;">Select Download</h2>
+            </div>
+        
+            <div class="select-container">
+                <div class="select-wrapper">
+                    <form id="download-form" action="/download" method="POST">
+                        <select name="download" id="select-download" class="select-box dark-shadow">
+                            <option value="all-sales">All Sales</option>
+                            <option value="all-expenses">All Expenses</option>
+                        </select>
+                    </form>
+                    <span class="select-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>
+                </div>
+            </div>
+        
+            <div class="btn-container">
+                <button type="submit" id="download-excel-btn" class="download-btn download-type"><i class="fa fa-download"></i>  Download Excel</button>
+            </div>
         </div>
-    </div>
-
-    <div class="btn-container">
-        <button type="submit" id="download-excel-btn" class="download-btn download-type"><i class="fa fa-download"></i>  Download Excel</button>
     </div>
 </body>
 </html> 
