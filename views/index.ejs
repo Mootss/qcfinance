@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queen Cakes</title>
     <link rel="stylesheet" href="/style.css" type="text/css">
-    <link rel="shortcut icon" href="/img/qcfinance-favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/img/qcfinance-favicon.jpg">
+    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 </head>
 <body>
     <header>
-        <img src="/img/qcfinance-logo.png" alt="Queen Cakes Finance">
+        <img src="/img/qcfinance-logo.jpg" alt="Queen Cakes Finance">
     </header>
 
     <div class="index-wrapper">
         <div class="flex-grow">
             <div class="btn-container">
-                <button id="sales-btn" type="button" onclick="location.href='/sales'">
+                <a id="sales-btn" href="/sales">
+                    Sales
+                </a>
+                <a id="expenses-btn" href="/expenses">
+                    Expenses
+                </a>
+
+                <!-- <button id="sales-btn" type="button" onclick="location.href='/sales'">
                     Sales
                 </button>
                 <button id="expenses-btn" type="button" onclick="location.href='/expenses'">
                     Expenses
-                </button>
+                </button> -->
             </div>
             
             <div class="dashboard">
@@ -87,9 +95,13 @@
             </div>
 
             <div class="btn-container">
-                <button class="download-btn" id="download-page-btn" type="button" onclick="location.href='/download'">
+                <!-- <button class="download-btn" id="download-page-btn" type="button" onclick="location.href='/download'">
                     Download Data
-                </button>
+                </button> -->
+
+                <a class="download-btn" href="/download">
+                    Download Data
+                </a>
             </div>
         </div>
     </div>
